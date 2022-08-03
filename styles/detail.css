@@ -1,81 +1,138 @@
-body {
-    width : 100%;
-    height: 100%;
-    margin : 0px;
-    background-color: #e0e0e0;
-    font-family: 'Ubuntu', sans-serif;
+#article {
+  margin-top: 10%;
+  margin-bottom: 6%;
+  height: 1000px;
+}
+#article .container {
+  display: flex;
+  /* border: 2px solid black; */
+  /* justify-content: center; */
+  margin-left: -10px;
+  align-items: center;
+  height: 480px;
+}
+#article img {
+  height: 400px;
+  width: 60%;
+  z-index: -1;
+}
+#article .img-part {
+  /* margin-top: 2%; */
+  margin-left: 2%;
+  /* margin-right: 4%; */
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#article .desc-part {
+  margin-right: 2%;
+  /* margin-left: 4%; */
+  border: 1px solid black;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#article .desc-part .payment {
+  margin-bottom: 1%;
+  margin-left: 8%;
+  margin-top: 8%;
+  height: 100%;
+  width: 100%;
+}
+#article .desc-part .payment form {
+  height: 100%;
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+#article .desc-part .payment form input {
+  width: 160px;
+  margin: 15px;
+}
+#article .desc-part .payment form button {
+  margin: 6%;
+  margin-left: 17%;
+  width: 20%;
+  height: 8%;
+}
+#article .description {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+#article .description h4 {
+  font-family: cursive;
+}
+/* Rating */
+.checked {
+  color: orange;
+}
+
+@media screen and (max-device-width: 576px) {
+  #article {
+      height: 1250px;
   }
-  .full{
-    padding-top: 50px;
-    padding-bottom: 50px;
-  } 
-  .container{
-    border:1px solid black;
-    display:grid;
-    height:400px;
-    grid-template-columns:70% 30%;
-    margin:2% auto;
-  
+  #article .img-part {
+      margin-top: 30px;
   }
-  .container1{
-   border-right:1px solid black;
-    display:flex;
-    justify-content:center;
-  
+  #article img {
+      height: 200px;
+      width: 100%;
+      z-index: -1;
   }
-  .container2{
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
-  
+  .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
   }
-  #img{
-    padding:2%;
+  #article .desc-part {
+      margin-top: 50px;
+      width: 400px;
   }
-  .hotelImage{
-    height:350px;
+  #article .description {
+      margin-top: 300px;
   }
-  .formStyle{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    height:350px;
-    width:100%;
-    margin-left:2%;
-    margin-right:2%;
+}
+
+@media screen and (min-device-width: 576px) and (max-device-width: 768px) {
+  #article {
+      margin-top: 14%;
+      margin-bottom: 6%;
   }
-  input{
-    width:60%;
+  #article .img-part {
+      /* margin-top: 2%; */
+      /* margin-left: 2%; */
+      /* margin-right: 4%; */
+      border-left: 1px solid black;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      height: 100%;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
-  .a{
-    display:flex;
-    justify-content:space-between;
+  #article img {
+      height: 200px;
+      width: 30%;
+      z-index: -1;
   }
-  label{
-    padding-left:3%;
-  /*  align-self:flex-end; */
+  #article .desc-part {
+      margin-right: 2%;
+      /* margin-left: 4%; */
+      border: 1px solid black;
+      height: 100%;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }
-  .submitstyle{
-     /* width:30%; */
-     box-sizing: content-box;
-     margin-left:25%;
-  }
-  #submit{
-    padding:2px;
-  }
-  .details{
-    display:flex;
-    flex-direction:column;
-    margin: 4%;  
-  }
-  h5{
-    font-family:cursive;
-    margin:2% 0 ;
-  }
-  
-  h1{
-      margin:6px auto;
-  }
-  ul{
-      margin-left: 4%;
-  }
+}
