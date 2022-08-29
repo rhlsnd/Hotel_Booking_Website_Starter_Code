@@ -1,138 +1,159 @@
-#article {
-  margin-top: 10%;
-  margin-bottom: 6%;
-  height: 1000px;
+html,body,#main { 
+  min-height: 100vh; 
+  }
+body{
+  background-color: #e0e0e0;
+  margin: 0%;
+  font-family:  'Ubuntu',sans-serif;
+  }
+
+a{
+  text-decoration: none;
+  color:black;
+}  
+
+input{
+  width:60%;
 }
-#article .container {
-  display: flex;
-  /* border: 2px solid black; */
-  /* justify-content: center; */
-  margin-left: -10px;
+
+img{
+  max-height: 350px;
+}
+
+header,footer{
+      background-color: rosybrown;
+  }   
+
+header{
+  display:flex;
+  justify-content: space-between;
   align-items: center;
-  height: 480px;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 5;
 }
-#article img {
-  height: 400px;
-  width: 60%;
-  z-index: -1;
+
+header a{
+  padding-left:10px;
 }
-#article .img-part {
-  /* margin-top: 2%; */
-  margin-left: 2%;
-  /* margin-right: 4%; */
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  height: 100%;
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+#mainLogo{
+  height:60px;
+  width:60px
 }
-#article .desc-part {
+
+#login{
   margin-right: 2%;
-  /* margin-left: 4%; */
+  padding-right:1%;
+} 
+
+#contentDiv{
+  height:auto;
+  margin-top: 85px;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 85px;
+} 
+
+#firstDivOfContentDiv{
+  display:flex;
+  max-height: 400px;
+}
+
+#block1{
   border: 1px solid black;
-  height: 100%;
-  width: 30%;
+  width: 800px;
+  max-height: auto;
+  text-align: center;
+
+}
+
+#block1 .carousel{
+  margin-top:0%;
+  margin-bottom: 3%;
+}
+
+#siteImage{
+   margin-top: 2%;
+   margin-bottom: 2%;
+  }
+
+#block2{
+  border: 1px solid black;
+  width:600px;
+}
+
+.formDiv{
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#article .desc-part .payment {
-  margin-bottom: 1%;
-  margin-left: 8%;
-  margin-top: 8%;
-  height: 100%;
-  width: 100%;
-}
-#article .desc-part .payment form {
-  height: 100%;
-  width: 100%;
-  /* display: flex;
   flex-direction: column;
-  justify-content: space-around; */
+  justify-content: space-around;
+  padding: 3%;
 }
-#article .desc-part .payment form input {
-  width: 160px;
-  margin: 15px;
+
+.forms{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5%;
 }
-#article .desc-part .payment form button {
-  margin: 6%;
-  margin-left: 17%;
-  width: 20%;
-  height: 8%;
+
+.forms .btn{
+  background-color: #e0e0e0;
 }
-#article .description {
-  margin-top: 1%;
-  margin-bottom: 2%;
+
+.forms .btn:hover{
+  background-color: #28A745;
+  color: black;
+}
+
+.label{
+  width:200px;
+}
+
+
+
+input{
+  height:30px;
+  width: 100%;
+}
+
+
+
+footer{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%
+}
+
+
+.socialMedia{
+  height: 20px;
+  width: 22px;
+}
+
+#subFooter1{
+  display:flex;
+  justify-content: space-between;
+  justify-content: baseline;
+  align-items: center;
+}
+
+#contactUsDiv{
   margin-left: 2%;
-}
-#article .description h4 {
-  font-family: cursive;
-}
-/* Rating */
-.checked {
-  color: orange;
+  margin-top: 1.3%;
+  margin-bottom: 1.3%;
 }
 
-@media screen and (max-device-width: 576px) {
-  #article {
-      height: 1250px;
-  }
-  #article .img-part {
-      margin-top: 30px;
-  }
-  #article img {
-      height: 200px;
-      width: 100%;
-      z-index: -1;
-  }
-  .container {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-  }
-  #article .desc-part {
-      margin-top: 50px;
-      width: 400px;
-  }
-  #article .description {
-      margin-top: 300px;
-  }
+
+
+#copyRightText{
+  text-align: center;
+  font-size: 10px;
 }
 
-@media screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  #article {
-      margin-top: 14%;
-      margin-bottom: 6%;
-  }
-  #article .img-part {
-      /* margin-top: 2%; */
-      /* margin-left: 2%; */
-      /* margin-right: 4%; */
-      border-left: 1px solid black;
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      height: 100%;
-      width: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  #article img {
-      height: 200px;
-      width: 30%;
-      z-index: -1;
-  }
-  #article .desc-part {
-      margin-right: 2%;
-      /* margin-left: 4%; */
-      border: 1px solid black;
-      height: 100%;
-      width: 40%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
+#socialMediaIcons{
+  padding: 10px;
 }

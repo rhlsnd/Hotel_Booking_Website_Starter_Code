@@ -4,35 +4,36 @@ body {
   margin: 0;
   background-color: #e0e0e0;
   font-family: 'Ubuntu', sans-serif;
+
 }
 
-header nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-header nav {
+header nav{
   background-color: rosybrown;
   display: flex;
   align-items: center;
   z-index: 2;
-}
 
-header .anchor {
+}
+header nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header .anchor{
   position: absolute;
-  right: 15px;
+  right:15px;
   margin-right: 2%;
 }
-header a {
+header a{
   text-decoration: none;
   color: black;
 }
 header img {
   height: 60px;
   width: 60px;
-  margin-left: 20px;
+  margin-left: 1%;
 }
+
 footer {
   background-color: rosybrown;
   display: flex;
@@ -42,30 +43,29 @@ footer {
   width: 100%;
   bottom: 0px;
 }
-footer a {
+footer a{
   text-decoration: none;
   color: black;
   margin-left: 2%;
 }
-footer p {
+footer p{
   position: absolute;
   left: 44%;
   /* float: center; */
-  font-size: 15px;
-  top: 20px;
+  font-size: 10px;
 }
-footer .logo {
+footer .logo{
   display: flex;
   position: absolute;
-  right: -20px;
+  right: 10px;
   margin-right: 2%;
-  padding: 4%;
 }
 footer img {
   height: 20px;
   width: 22px;
 }
-@media screen and (max-device-width: 576px) {
+
+@media screen and (max-device-width: 576px){
   footer {
       background-color: rosybrown;
       display: flex;
@@ -75,13 +75,15 @@ footer img {
       width: 100%;
       bottom: 0px;
   }
-  footer .btn {
+
+  footer .btn{
       width: 105px;
       height: 35px;
   }
-  footer p {
+  footer p{
       position: absolute;
       left: 38%;
+      /* float: center; */
       font-size: 10px;
       top: 5px;
   }
