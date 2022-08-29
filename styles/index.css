@@ -54,8 +54,19 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
+#form-button {
+    background: lightblue;
+    padding: 10px 40px;
+    border: 0ch;
+}
+
+
+
 input {
+
     background-color: #f1f1f1;
     border: 1px solid transparent;
     border-radius: 12px;

@@ -2,9 +2,12 @@
 <html>
 <head>
   <title>Payment</title>
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="styles/payment.css">
   <link rel="stylesheet" href="styles/loader.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -12,6 +15,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
   <style>
     header {
       display: flex;
@@ -35,11 +39,11 @@
 <body onload="myFunction()">
   <div id="loader"></div>
   <div style="display:none;" id="myDiv" class="animate-bottom">
-    <header id="headerId"></header>
-
-    <div name="content" id="content">
-    <h2>&nbsp Radisson Blu Hotel</h2>
   
+    <header id="headerId"></header>
+    <!-- Header/ -->
+    <!-- /Content -->
+    <div name="content" id="content">
       <div id="imageWithData">
         <div id="siteImageDiv">
           <img id="siteImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" />
@@ -53,30 +57,24 @@
       <div style="width:100%; height:100px" id="midDiv"></div>
       <div id="billAndData" class="row">
         <div id="dataAboutCustomer" class="insideBillAndData col-12 col-sm-4">
-          <p><b><i>Name:</i></b> John Doe</p>
-          <p><b><i>Number of Adults:</i></b> 2</p>
-          <p><b><i>Check-in Data:</i></b> 06/06/2020</p>
-          <p><b><i>Check-out Date:</i></b> 08/06/2020</p>
+   
         </div>
         <div id="dataAboutAmount" class="insideBillAndData col-12 col-sm-4">
-          <p><b><i>Tariff Breakdown:</i></b> Rs 1000 x 2 Adults x 5 Nights</p>
-          <p><b><i>Total Amount:</i></b> Rs 10000</p>
+    
         </div>
         <div id="paymentLink" class="insideBillAndData col-12 col-sm-4">
           <button type="button" class="btn btn-success" onclick="payNow()">Pay Now</button>
+
         </div>
       </div>
       <div style="width:100%; height:100px"></div>
     </div>
-  
+    <!-- Content/ -->
     <footer id="footerId"></footer>
-   
+    <!-- Footer/ -->
   </div>
-
- 
-  <script>
-<h4 class="modal-title" id="example-modal-label">Get in touch</h4>
   
+  <script>
     var myVar;
     function myFunction() {
       myVar = setTimeout(showPage, 3000);
@@ -88,9 +86,8 @@
   </script>
   
   <script src="scripts/common.js"></script>
-  
+ 
   <script src="scripts/payment.js"></script>
-
+  
 </body>
-
 </html>

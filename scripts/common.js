@@ -28,9 +28,7 @@ function loginbut() {
   if (document.getElementById("loginButton").innerHTML === "LOGOUT") {
     document.getElementById("loginButton").innerHTML = "LOGIN"
     document.getElementById("loginButton").setAttribute("data-target", "#Lohj");
-    //clears local storage on logout--------------
     localStorage.clear();
-    // -------------------------------------------
   }
   else
     document.getElementById("loginButton").setAttribute("data-target", "#Login");
